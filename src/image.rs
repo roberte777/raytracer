@@ -58,7 +58,7 @@ impl Image {
 
     pub fn at(&self, x: usize, y: usize) -> &Pixel {
         let index = x * self.width + y;
-        return &self.pixels[index];
+        &self.pixels[index]
     }
 
     pub fn to_ppm(&self) -> String {
